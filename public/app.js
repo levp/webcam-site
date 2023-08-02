@@ -6,7 +6,6 @@ async function main() {
 	const devices = navigator.mediaDevices;
 	if (!devices) {
 		throw new Error('[navigator.mediaDevices] not supported in this browser.');
-		return;
 	}
 
 	const stream = await devices.getUserMedia({
